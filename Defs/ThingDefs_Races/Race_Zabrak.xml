@@ -138,7 +138,7 @@
             <alienslavekinds>
                 <li>
                     <kindDefs>
-                        <li>ZabrakHunter</li>
+                        <li>ZabrakSlave</li>
                     </kindDefs>
                     <chance>40.0</chance>
                 </li>
@@ -185,7 +185,7 @@
                         </li>
                     </pawnKindEntries>
                     <factionDefs>
-                        <li>PlayerColony</li> 
+                        <li>ZabrakPlayerColony</li> 
                     </factionDefs>
                 </li>
             </alienwandererkinds>

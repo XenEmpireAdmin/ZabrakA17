@@ -92,6 +92,10 @@
     <trader>true</trader>
   </PawnKindDef>
   
+    <PawnKindDef ParentName="ZabrakCivBase">
+    <defName>ZabrakSlave</defName>
+    <label>colonist</label>
+  </PawnKindDef>
 
   
   <!-- ============================ Zabrak Security ========================== -->
