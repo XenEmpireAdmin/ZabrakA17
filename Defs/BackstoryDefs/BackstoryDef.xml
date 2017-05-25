@@ -93,9 +93,6 @@
 	<titleShort>Tribechild</titleShort>
     <baseDescription>Most of the Zabrak people are simple tribesmen and women, like NAME. A hardy people, due to the harsh environment.</baseDescription>
     <slot>Childhood</slot>
-    <spawnCategories>
-      <li>ZabrakBackstory</li>
-    </spawnCategories>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
@@ -111,6 +108,9 @@
         <amount>4</amount>
       </li>
     </skillGains>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
@@ -119,9 +119,6 @@
 	<titleShort>Builder</titleShort>
     <baseDescription>Facing the rough winter nights makes you appreciate a good hut. As such, a good builder is a valued member of any Zabrak community.</baseDescription>
     <slot>Childhood</slot>
-    <spawnCategories>
-      <li>ZabrakBackstory</li>
-    </spawnCategories>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
@@ -137,6 +134,9 @@
         <amount>4</amount>
       </li>
     </skillGains>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
 </AlienRace.BackstoryDef>
 
     <AlienRace.BackstoryDef>
@@ -475,7 +475,7 @@
     <slot>Adulthood</slot>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
-	    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+	  <bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<maleCommonality>10</maleCommonality>
 	<femaleCommonality>10</femaleCommonality>
     <skillGains>
@@ -497,5 +497,180 @@
     </spawnCategories>
     </AlienRace.BackstoryDef>
 
+       <AlienRace.BackstoryDef>
+    <defName>ZabrakRebelAdult</defName>
+    <title>Rebel</title>
+    <titleShort>Rebel</titleShort>
+    <baseDescription>NAME is a rebellious free-spirit</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	  <maleCommonality>10</maleCommonality>
+	  <femaleCommonality>10</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>10</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>ZabrakFoodie</defName>
+    <title>Gourmet</title>
+    <titleShort>Gourmet</titleShort>
+    <baseDescription>NAME loves cooking, and just about anything to do with food.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	  <bodyTypeGlobal>Fat</bodyTypeGlobal>
+	  <maleCommonality>30</maleCommonality>
+	  <femaleCommonality>32</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>10</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>ZabrakRebelKid</defName>
+    <title>Rebellious</title>
+    <titleShort>Rebellious</titleShort>
+    <baseDescription>NAME is a rebellious free-spirited child. A real firecracker!</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	  <maleCommonality>12</maleCommonality>
+	  <femaleCommonality>13</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>10</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>ZabrakTracker</defName>
+    <title>Tracker</title>
+    <titleShort>Tracker</titleShort>
+    <baseDescription>NAME is renowned among HIS tribe for HIS sharp senses, and is always called for when something elusive needs tracking.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	  <maleCommonality>20</maleCommonality>
+	  <femaleCommonality>20</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>10</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>ZabrakServant</defName>
+    <title>Servant</title>
+    <titleShort>Servant</titleShort>
+    <baseDescription>NAME was a servant to a powerful lord. HECAP was well-treated, and had a little free time to educate HIMself, and train some archery.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	  <bodyTypeGlobal>Thin</bodyTypeGlobal>
+	  <maleCommonality>10</maleCommonality>
+	  <femaleCommonality>10</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Growing</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>10</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>ZabChildServant</defName>
+    <title>Child servant</title>
+    <titleShort>Servant</titleShort>
+    <baseDescription>NAME was born and raised as a servent in the household of a powerful tribal leader. HECAP learned all the basic skills from the tribal women who raised all the village's children.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	  <maleCommonality>90</maleCommonality>
+	  <femaleCommonality>90</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
+    </AlienRace.BackstoryDef>
 
 </Defs>
