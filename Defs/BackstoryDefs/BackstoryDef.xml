@@ -32,6 +32,36 @@
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
+    <defName>ZabrakMonkAdl</defName>
+    <title>Battle monk</title>
+	<titleShort>Monk</titleShort>
+    <baseDescription>NAME spent HIS adolescent years trainint in an ancient monastery devoted to martial arts. HECAP has masterered several forms of physical combat and extended HIS physical limitations.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>8</amount>
+      </li>
+	  <li>
+        <defName>Growing</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
     <defName>ZabrakTribalAdult</defName>
     <title>Tribesman</title>
 	<titleShort>Tribesman</titleShort>
@@ -110,16 +140,13 @@
 </AlienRace.BackstoryDef>
 
     <AlienRace.BackstoryDef>
-    <defName>ZabrakSpacer</defName>
+    <defName>ZabrakSpacerKid</defName>
     <title>Spacer zabrak</title>
     <titleShort>Z-Spacer</titleShort>
     <baseDescription>NAME was born on the family's moving home - a sublight long-haul cargo cruiser. As one of the few space-faring Zabrak HECAP grew up learning to wheel, deal, and steal enough to keep the ship in spaceworthy condition and delivering cargo on schedule.</baseDescription>
     <slot>Childhood</slot>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<bodyTypeMale>Male</bodyTypeMale>
-      <spawnCategories>
-      <li>ZabrakBackstory</li>
-    </spawnCategories>
 	<maleCommonality>20</maleCommonality>
 	<femaleCommonality>20</femaleCommonality>
     <skillGains>
@@ -136,6 +163,38 @@
         <amount>3</amount>
       </li>
     </skillGains>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+        <AlienRace.BackstoryDef>
+    <defName>ZabrakTheif</defName>
+    <title>Zabrak theif</title>
+    <titleShort>Z-theif</titleShort>
+    <baseDescription>NAME lived out HIS childhood as a theif, stealing what HECAP needed to survive.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <skillGains>
+          <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
     </AlienRace.BackstoryDef>
 
 	    <AlienRace.BackstoryDef>
@@ -168,9 +227,6 @@
         <amount>2</amount>
       </li>
     </skillGains>
-	   <workDisables>
-        <li>Firefighting</li>
-	   </workDisables>
     </AlienRace.BackstoryDef>
 
 
@@ -205,7 +261,6 @@
   </AlienRace.BackstoryDef>
 
     <AlienRace.BackstoryDef>
-
     <defName>ZabrakCoreKid</defName>
     <title>Zabrak crafter</title>
     <titleShort>Crafter</titleShort>
@@ -255,8 +310,7 @@
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
-    <AlienRace.BackstoryDef>
-
+   <AlienRace.BackstoryDef>
     <defName>ZabrakMedic</defName>
     <title>Zabrak healer</title>
     <titleShort>Healer</titleShort>
@@ -280,7 +334,35 @@
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
-    <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef>
+  <defName>Zabrakherb</defName>
+    <title>Zabrak herbalist</title>
+    <titleShort>Herbalist</titleShort>
+    <baseDescription>NAME tends HIS herbs to create many various food additives and curatives.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <slot>Adulthood</slot>
+	<maleCommonality>25</maleCommonality>
+	<femaleCommonality>25</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Growing</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
     <defName>ZabrakHunterBS</defName>
     <title>Zabrak hunter</title>
     <titleShort>Hunter</titleShort>
@@ -318,8 +400,33 @@
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
-	<maleCommonality>20</maleCommonality>
-	<femaleCommonality>20</femaleCommonality>
+	<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>ConscriptZabrak</defName>
+    <title>Zabrak conscript</title>
+    <titleShort>Conscript</titleShort>
+    <baseDescription>NAME was conscripted into a medeival army, and trained as a soldier..</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+	<maleCommonality>30</maleCommonality>
+	<femaleCommonality>30</femaleCommonality>
     <skillGains>
       <li>
         <defName>Shooting</defName>
@@ -369,11 +476,8 @@
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
 	    <bodyTypeGlobal>Thin</bodyTypeGlobal>
-      <spawnCategories>
-      <li>ZabrakBackstory</li>
-    </spawnCategories>
-	<maleCommonality>20</maleCommonality>
-	<femaleCommonality>20</femaleCommonality>
+	<maleCommonality>10</maleCommonality>
+	<femaleCommonality>10</femaleCommonality>
     <skillGains>
           <li>
         <defName>Melee</defName>
@@ -388,6 +492,9 @@
         <amount>2</amount>
       </li>
     </skillGains>
+    <spawnCategories>
+      <li>ZabrakBackstory</li>
+    </spawnCategories>
     </AlienRace.BackstoryDef>
 
 
