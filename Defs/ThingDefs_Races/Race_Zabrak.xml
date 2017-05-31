@@ -212,14 +212,14 @@
     </alienRace>
 	<statBases>
       <MarketValue>2000</MarketValue>
-      <MoveSpeed>7.62</MoveSpeed>
+      <MoveSpeed>6.42</MoveSpeed>
       <Flammability>0.3</Flammability>
       <ComfyTemperatureMin>6</ComfyTemperatureMin>
       <ComfyTemperatureMax>28</ComfyTemperatureMax>
       <LeatherAmount>25</LeatherAmount>
 	   <PsychicSensitivity>0.85</PsychicSensitivity>
-	   <MiningSpeed>3</MiningSpeed>
-	   <StonecuttingSpeed>2.55</StonecuttingSpeed>
+	   <MiningSpeed>1.2</MiningSpeed>
+	   <StonecuttingSpeed>1.55</StonecuttingSpeed>
     </statBases>
     <verbs>
       <li>
@@ -247,8 +247,9 @@
       <leatherCommonalityFactor>0.001</leatherCommonalityFactor>
       <leatherInsulation>0.70</leatherInsulation>
       <leatherMarketValueFactor>3</leatherMarketValueFactor>
-      <nameGenerator>NamerPersonZabrak</nameGenerator>
-      <body>Human</body>
+      <nameGenerator>NamerPersonZabrakM</nameGenerator>
+      <nameGeneratorFemale>NamerPersonZabrakF</nameGeneratorFemale>
+      <body>Zabrak_body</body>
       <bloodDef>FilthBloodZabrak</bloodDef>	
       <meatColor>(0, 0, 128)</meatColor>
       <baseBodySize>1.1</baseBodySize>
