@@ -7,8 +7,8 @@
       <rulesStrings>
         <li>name->[ZabrakfirstM] [Zabraklast]</li>
         <li>name->[badasszab] [ZabrakfirstM]</li>
-        <li>name->[ZabrakfirstM] '[badassx]' [Zabraklast]</li>
-        <li>name->[ZabrakfirstM] [badassx]</li>
+        <li>name->[ZabrakfirstM] '[badasszab]' [Zabraklast]</li>
+        <li>name->[ZabrakfirstM] [badasszab]</li>
 
       </rulesStrings>
       <rulesRaw>
@@ -40,7 +40,7 @@
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
-          <keyword>Zabrakfirst</keyword>
+          <keyword>ZabrakfirstF</keyword>
           <path>Zabrak_Names/ZabrakF</path>
         </li>
         <li Class="Rule_File">
