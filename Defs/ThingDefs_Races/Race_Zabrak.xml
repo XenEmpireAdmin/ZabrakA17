@@ -39,12 +39,12 @@
             <ForcedRaceTraitEntries>
                 <li>
                     <defname>Brawler</defname>
-                    <chance>50</chance>
+                    <chance>25</chance>
                 </li>
                 <li>
                     <defname>Beauty</defname>
                     <degree>1</degree>
-                    <chance>50</chance>
+                    <chance>20</chance>
                 </li>
             </ForcedRaceTraitEntries>
             <alienPartGenerator>

@@ -64,7 +64,7 @@
  <HairDef>
     <label>Tied UpZ</label>
     <hairGender>Female</hairGender>
-    <texPath>Hairs/LT</texPath>
+    <texPath>Hairs/ZTails</texPath>
     <defName>LTZab</defName>
 		<hairTags>
 			<li>ZabrakHair</li>
@@ -74,7 +74,7 @@
   <HairDef>
     <label>WonkyZab</label>
     <hairGender>Any</hairGender>
-    <texPath>Hairs/SE</texPath>
+    <texPath>Hairs/ZMess</texPath>
     <defName>SEZab</defName>
 		<hairTags>
 			<li>ZabrakHair</li>

@@ -35,8 +35,8 @@
     <defName>ZabrakMonkAdl</defName>
     <title>Battle monk</title>
 	<titleShort>Monk</titleShort>
-    <baseDescription>NAME spent HIS adolescent years trainint in an ancient monastery devoted to martial arts. HECAP has masterered several forms of physical combat and extended HIS physical limitations.</baseDescription>
-    <slot>Childhood</slot>
+    <baseDescription>NAME spent HIS adolescent years training in an ancient monastery devoted to martial arts. HECAP has masterered several forms of physical combat and extended HIS physical limitations.</baseDescription>
+    <slot>Adulthood</slot>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
@@ -88,8 +88,8 @@
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
-    <defName>ZabrakTribal</defName>
-    <title>Tribechild</title>
+  <defName>ZabrakTribal</defName>
+  <title>Tribechild</title>
 	<titleShort>Tribechild</titleShort>
     <baseDescription>Most of the Zabrak people are simple tribesmen and women, like NAME. A hardy people, due to the harsh environment.</baseDescription>
     <slot>Childhood</slot>
@@ -118,7 +118,7 @@
     <title>Hut builder</title>
 	<titleShort>Builder</titleShort>
     <baseDescription>Facing the rough winter nights makes you appreciate a good hut. As such, a good builder is a valued member of any Zabrak community.</baseDescription>
-    <slot>Childhood</slot>
+    <slot>Adulthood</slot>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
