@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<ThingDef Name="BasePawn" Abstract="True">
+<ThingDef Name="BaseZabPawn" Abstract="True">
     <thingClass>Pawn</thingClass>
     <category>Pawn</category>
     <selectable>true</selectable>
@@ -18,6 +18,7 @@
         <li>ITab_Pawn_Guest</li>
         <li>ITab_Pawn_Prisoner</li>
         <li>ITab_Pawn_Social</li>
+        <li>ITab_Pawn_Combat</li>
     </inspectorTabs>
     <comps>
         <li>
@@ -27,16 +28,16 @@
     <drawGUIOverlay>true</drawGUIOverlay>
 </ThingDef>
 
-<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+<AlienRace.ThingDef_AlienRace ParentName="BaseZabPawn">
     <defName>Alien_Zabrak</defName>
     <label>Zabrak</label>
     <description>A tribal warrior race, though generally peaceful.</description>
     <alienRace>
         <generalSettings>
-            <MaleGenderProbability>0.5</MaleGenderProbability>
-            <PawnsSpecificBackstories>true</PawnsSpecificBackstories>
-            <ImmuneToAge>true</ImmuneToAge>
-            <ForcedRaceTraitEntries>
+            <maleGenderProbability>0.5</maleGenderProbability>
+            <pawnsSpecificBackstories>true</pawnsSpecificBackstories>
+            <immuneToAge>true</immuneToAge>
+            <forcedRaceTraitEntries>
                 <li>
                     <defname>Brawler</defname>
                     <chance>25</chance>
@@ -46,15 +47,14 @@
                     <degree>1</degree>
                     <chance>20</chance>
                 </li>
-            </ForcedRaceTraitEntries>
+            </forcedRaceTraitEntries>
             <alienPartGenerator>
                 <aliencrowntypes>
                     <li>Average_Normal</li>
                 </aliencrowntypes>
-                <alienbodytypes>
-                </alienbodytypes>
-                <alienskincolorgen Class="ColorGenerator_Options">
-                               <options>
+                <alienbodytypes />
+            <alienskincolorgen Class="ColorGenerator_Options">
+            <options>
             <li>
                 <weight>10</weight>
                 <only>RGBA(0.80,0.30,0.30,1)</only>
@@ -118,8 +118,7 @@
             </options>
                 </alienskincolorgen>
             </alienPartGenerator>
-			<chemicalSettings>	
-		    </chemicalSettings>
+			<chemicalSettings />	
         </generalSettings>
         <graphicPaths>
             <li>
@@ -132,7 +131,7 @@
             </li>
         </graphicPaths>
         <hairSettings>
-            <HasHair>true</HasHair>
+            <hasHair>true</hasHair>
         </hairSettings>
         <pawnKindSettings>
             <alienslavekinds>
@@ -219,39 +218,65 @@
       <LeatherAmount>25</LeatherAmount>
 	   <PsychicSensitivity>0.85</PsychicSensitivity>
 	   <MiningSpeed>1.2</MiningSpeed>
-	   <StonecuttingSpeed>1.55</StonecuttingSpeed>
     </statBases>
-    <verbs>
+    <tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1.45</defaultCooldownTime>
-        <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
-        <meleeDamageDef>Blunt</meleeDamageDef>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.6</cooldownTime>
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>22</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
       </li>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1.45</defaultCooldownTime>
-        <meleeDamageBaseAmount>15</meleeDamageBaseAmount>
-        <meleeDamageDef>Blunt</meleeDamageDef>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.6</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>22</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
       </li>
-    </verbs>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <commonality>0.3</commonality>
+      </li>
+    </tools>
     <race>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>600</lifeExpectancy>
-      <leatherColor>(0, 0, 28)</leatherColor>
-      <leatherCommonalityFactor>0.001</leatherCommonalityFactor>
-      <leatherInsulation>0.70</leatherInsulation>
-      <leatherMarketValueFactor>3</leatherMarketValueFactor>
+    <useLeatherFrom>Human</useLeatherFrom>
       <nameGenerator>NamerPersonZabrakM</nameGenerator>
       <nameGeneratorFemale>NamerPersonZabrakF</nameGeneratorFemale>
       <body>Zabrak_body</body>
       <bloodDef>FilthBloodZabrak</bloodDef>	
-      <meatColor>(0, 0, 128)</meatColor>
+    <useMeatFrom>Human</useMeatFrom>
       <baseBodySize>1.1</baseBodySize>
       <baseHealthScale>1.25</baseHealthScale>
       <foodType>OmnivoreHuman</foodType>
@@ -293,18 +318,19 @@
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-      <specialshadowData>
+      <specialShadowData>
         <volume>(0.3, 0.8, 0.4)</volume>
         <offset>(0,0,-0.3)</offset>
-      </specialshadowData>
+      </specialShadowData>
       <ageGenerationCurve>
         <points>
                     <li>(16,0)</li>
-                    <li>(17,200)</li>
-                    <li>(20,100)</li>
+                    <li>(17,250)</li>
+                    <li>(18,300)</li>
+                    <li>(20,250)</li>
                     <li>(30,100)</li>
-                    <li>(40,20)</li>
-                    <li>(50,10)</li>
+                    <li>(40,15)</li>
+                    <li>(50,8)</li>
 					<li>(120,1)</li>
 					<li>(900,1)</li>
                     <li>(1000,0)</li>

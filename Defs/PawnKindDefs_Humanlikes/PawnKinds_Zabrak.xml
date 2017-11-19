@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<PawnKindDefs>
+<Defs>
 
   <!-- ============================ Zabrak Base ========================== -->
 
@@ -36,7 +36,7 @@
     </weaponMoney>
     <weaponTags>
       <li>Gun</li>
-      <li>Melee</li>
+      <li>NonNeolithicOnlyMelee</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -379,4 +379,4 @@
   </PawnKindDef>
   
 
-</PawnKindDefs>
+</Defs>
