@@ -47,7 +47,7 @@ Note: Since you'll start poor and research slowly, this is a difficult scenario.
 			</li>
 			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
-				<thingDef>HerbalMedicine</thingDef>
+				<thingDef>MedicineIndustrial</thingDef>
 				<count>20</count>
 			</li>
 			<li Class="ScenPart_StartingThing_Defined">

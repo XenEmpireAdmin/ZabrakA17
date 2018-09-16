@@ -5,14 +5,13 @@
     <defName>PJ_ZabHeart</defName>
     <label>heart</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>5</bleedingRateMultiplier>
     <skinCovered>false</skinCovered>
     <tags>
       <li>BloodPumpingSource</li>
     </tags>
+    <bleedRate>4</bleedRate>
     <spawnThingOnRemoved>Heart</spawnThingOnRemoved>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
   
 </Defs>

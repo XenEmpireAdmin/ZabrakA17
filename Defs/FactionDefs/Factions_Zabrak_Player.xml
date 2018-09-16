@@ -14,11 +14,14 @@
     <isPlayer>true</isPlayer>
     <basicMemberKind>Zabrak</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
-    <baseNameMaker>NamerFactionBasePlayerColony</baseNameMaker>
-		<baseNameMakerPlayer>NamerFactionPlayerColonyRandomized</baseNameMakerPlayer>
-		<factionNameMakerPlayer>NamerFactionBasePlayerColonyRandomized</factionNameMakerPlayer>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <techLevel>Ultra</techLevel>
-    <backstoryCategory>Civil</backstoryCategory>
+    <backstoryCategories>
+			<li>ZabrakBackstory</li>
+      <li>Civil</li>
+  	</backstoryCategories>
     <homeIconPath>World/ZabrakBaseIcon</homeIconPath>
     <expandingIconTexture>World/ZabrakBaseIcon</expandingIconTexture>
     <startingResearchTags>
@@ -42,11 +45,14 @@
     <isPlayer>true</isPlayer>
     <basicMemberKind>Zabrak</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
-    <baseNameMaker>NamerFactionBasePlayerTribe</baseNameMaker>
-		<baseNameMakerPlayer>NamerFactionTribal</baseNameMakerPlayer>
-		<factionNameMakerPlayer>NamerFactionBaseTribal</factionNameMakerPlayer>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
     <techLevel>Ultra</techLevel>
-    <backstoryCategory>Civil</backstoryCategory>
+    <backstoryCategories>
+			<li>ZabrakBackstory</li>
+      <li>Civil</li>
+  	</backstoryCategories>
     <homeIconPath>World/ZabrakBaseIcon</homeIconPath>
     <expandingIconTexture>World/ZabrakBaseIcon</expandingIconTexture>
     <startingResearchTags>

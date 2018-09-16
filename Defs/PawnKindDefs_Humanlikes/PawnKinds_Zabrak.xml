@@ -6,12 +6,18 @@
   <PawnKindDef Name="ZabrakBase" Abstract="True">
     <defaultFactionType>ZabrakEmpire</defaultFactionType>
     <race>Alien_Zabrak</race>
-	<backstoryCategory>ZabrakBackstory</backstoryCategory>
+	<backstoryCategories>
+			<li>ZabrakBackstory</li>
+      <li>Civil</li>
+  	</backstoryCategories>
     <chemicalAddictionChance>0.035</chemicalAddictionChance>
     <baseRecruitDifficulty>0.60</baseRecruitDifficulty>
-    <apparelAllowHeadwearChance>0</apparelAllowHeadwearChance>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <apparelTags>
       <li>Tribal</li>
+      <li>Neolithic</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
     </apparelTags>
   </PawnKindDef>
   
@@ -31,8 +37,8 @@
       <max>900</max>
     </apparelMoney>
     <weaponMoney>
-      <min>0</min>
-      <max>250</max>
+      <min>150</min>
+      <max>550</max>
     </weaponMoney>
     <weaponTags>
       <li>Gun</li>
@@ -157,6 +163,8 @@
     <apparelTags>
       <li>Outlander</li>
       <li>Military</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
     </apparelTags>
     <apparelMoney>
       <min>1500</min>
@@ -184,7 +192,7 @@
           </countRange>
         </li>
         <li>
-          <thingDef>Medicine</thingDef>
+          <thingDef>MedicineIndustrial</thingDef>
           <countRange>
             <min>1</min>
             <max>1</max>
@@ -215,6 +223,8 @@
     <apparelTags>
       <li>Outlander</li>
       <li>Military</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
     </apparelTags>
     <apparelMoney>
       <min>1500</min>
@@ -250,7 +260,7 @@
           </countRange>
         </li>
         <li>
-          <thingDef>Medicine</thingDef>
+          <thingDef>MedicineIndustrial</thingDef>
           <countRange>
             <min>1</min>
             <max>1</max>
@@ -273,6 +283,10 @@
     <apparelTags>
       <li>Outlander</li>
       <li>Military</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
     </apparelTags>
     <apparelMoney>
       <min>1000</min>
@@ -308,7 +322,7 @@
           </countRange>
         </li>
         <li>
-          <thingDef>Medicine</thingDef>
+          <thingDef>MedicineIndustrial</thingDef>
           <countRange>
             <min>1</min>
             <max>2</max>
@@ -331,6 +345,11 @@
     <apparelTags>
       <li>Military</li>
       <li>Spacer</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>SpacerMilitary</li>
     </apparelTags>
     <apparelMoney>
       <min>2500</min>
@@ -341,6 +360,7 @@
       <max>2000</max>
     </weaponMoney>
     <weaponTags>
+    <li>Gun</li>
 			<li>EliteGun</li>
       <li>AdvancedGun</li>
     </weaponTags>
@@ -368,7 +388,7 @@
           </countRange>
         </li>
         <li>
-          <thingDef>Medicine</thingDef>
+          <thingDef>MedicineIndustrial</thingDef>
           <countRange>
             <min>1</min>
             <max>2</max>

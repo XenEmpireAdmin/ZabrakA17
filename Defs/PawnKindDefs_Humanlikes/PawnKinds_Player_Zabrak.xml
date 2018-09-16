@@ -14,9 +14,17 @@
     <defName>Zabrak</defName>
     <label>colonist</label>
     <defaultFactionType>ZabrakPlayerColony</defaultFactionType>
-    <backstoryCategory>ZabrakBackstory</backstoryCategory>
+    <backstoryCategories>
+			<li>ZabrakBackstory</li>
+      <li>Civil</li>
+  	</backstoryCategories>
     <apparelTags>
       <li>Spacer</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>SpacerMilitary</li>
     </apparelTags>
     <apparelMoney>
       <min>1000</min>
