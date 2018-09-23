@@ -181,6 +181,7 @@
                 </alienskincolorgen>
             </alienPartGenerator>
 			<chemicalSettings />	
+            <humanRecipeImport>true</humanRecipeImport>
         </generalSettings>
         <graphicPaths>
             <li>
@@ -194,6 +195,9 @@
         </graphicPaths>
         <hairSettings>
             <hasHair>true</hasHair>
+            <hairTags>
+			<li>ZabrakHair</li>
+			</hairTags>
         </hairSettings>
         <relationSettings>
             <relationChanceModifierChild>1.1</relationChanceModifierChild>
